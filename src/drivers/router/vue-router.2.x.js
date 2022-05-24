@@ -39,6 +39,6 @@ export default {
     routerGo: function (data) {
         var router = this.plugins.router;
 
-        (router.push || router.go).call(router, data).catch(function (err){});
+        (router.push || router.go).call(router, data.redirect).catch(function (err){});
     }
 };
